@@ -7,6 +7,15 @@ First we one hot encoded the cleaned tweets then added padding to make the size 
 The figure above shows the model summary, as you can see we have used lots of dropout layer to reduce the overfitting of the model. With this architecture we have achieved an accuracy of about 87% on the validation set, though the model was trained for only 5 epochs still the accuracy obtained was quite satisfying.<br>
 I have also used CNN pooling layers along with the embedding layer to see if the presence of pooling layers somehow impact the accuracy, though I didn't see any considerable amount of accuracy increment, but that might be due to the less number of epochs.<br>
 <h3> Glove Vectors </h3>
-For using Glove, I have downloaded the glove text file from the Standford website, the txt file contains key value pairs, where the word is represented as the key and the 100/200/300 dimensional vector is as the value. I created a weight matrix using the glove vectors, by weight matrix we mean to say that all the one hot encoded value of the words that we obtained during pre-processing for simple embedding layer will be replaced by 100d glove vector for that respective one hot encoded value
+For using Glove, I have downloaded the glove text file from the Standford website, the txt file contains key value pairs, where the word is represented as the key and the 100/200/300 dimensional vector is as the value. I created a weight matrix using the glove vectors, by weight matrix we mean to say that all the one hot encoded value of the words that we obtained earlier during pre-processing for simple embedding layer will be replaced by 100d glove vector. This weight matrix is then passed to the embedding layer of neural network as weight parameter.<br>
+<img src="https://github.com/nilay121/Comparison-between-various-Word-Embedding-techniques-on-twitter-dataset/blob/main/glove.png" height="300px" width="600px"><br>
+<h3> Word2Vec </h3>
+In order to use word to vec we are using the Gensim library which can be simple installed by typing <br>
+
+```bash
+pip install gensim
+```
+uhuihihoh
+
 
 
