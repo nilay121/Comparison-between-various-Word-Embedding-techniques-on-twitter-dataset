@@ -8,6 +8,7 @@ The figure above shows the model summary, as you can see we have used lots of dr
 I have also used CNN pooling layers along with the embedding layer to see if the presence of pooling layers somehow impact the accuracy, though I didn't see any considerable amount of accuracy increment, but that might be due to the less number of epochs.<br>
 <h3> Glove Vectors </h3>
 For using Glove, I have downloaded the glove text file from the Standford website, the txt file contains key value pairs, where the word is represented as the key and the 100/200/300 dimensional vector is as the value. I created a weight matrix using the glove vectors, by weight matrix we mean to say that all the one hot encoded value of the words that we obtained earlier during pre-processing for simple embedding layer will be replaced by 100d glove vector. This weight matrix is then passed to the embedding layer of neural network as weight parameter.<br>
+
 ```bash
 https://nlp.stanford.edu/projects/glove/
 ```
