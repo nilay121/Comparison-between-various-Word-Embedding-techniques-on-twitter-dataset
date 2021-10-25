@@ -15,7 +15,8 @@ In order to use word to vec we are using the Gensim library which can be simple 
 ```bash
 pip install gensim
 ```
-uhuihihoh
+The gensim word2vec model is trained the tokenized words. The figure below shows show the word2vec model is predicting similar words based on the given context. However, one point to note is that in the gensim library we also have many pre-trained models on google news or twitter dataset which can be easily used but for our purpose we will train a custom word2vec model on our tweets.<br><br>
+<img src="https://github.com/nilay121/Comparison-between-various-Word-Embedding-techniques-on-twitter-dataset/blob/main/w2v%20similar%20word.png" height="300px" width="600px">
 
 
 
